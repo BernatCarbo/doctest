@@ -20,6 +20,7 @@ const config: Config = {
   organizationName: 'bernatcarbo', // Usually your GitHub org/user name.
   projectName: 'doctest', // Usually your repo name.
 
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
