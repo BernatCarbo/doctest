@@ -10,14 +10,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://BernatCarbo.github.io',
+  url: 'https://bernatcarbo.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/doctest/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'BernatCarbo', // Usually your GitHub org/user name.
+  organizationName: 'bernatcarbo', // Usually your GitHub org/user name.
   projectName: 'doctest', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -36,7 +36,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          //routeBasePath: '/',
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
         },
         theme: {
