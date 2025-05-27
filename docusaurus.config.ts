@@ -21,6 +21,7 @@ const config: Config = {
   projectName: 'doctest', // Usually your repo name.
 
 
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
