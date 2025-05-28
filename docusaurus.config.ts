@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Doordeck Developer Hub',
+  tagline: 'Explore comprehensive documentation for our cloud APIs and software development kits (SDKs)',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://bernatcarbo.github.io',
