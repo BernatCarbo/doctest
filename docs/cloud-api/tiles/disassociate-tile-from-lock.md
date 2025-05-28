@@ -10,8 +10,6 @@ The endpoint removes the relationship between a tile and a lock, the tile can th
 
 `DELETE https://api.doordeck.com/device/DEVICE_ID/tile/TILE_ID/`
 
-Replace `TILE_ID` with the appropriate tile ID and `DEVICE_ID` with the appropriate device ID.
-
 ### Example
 
 import Tabs from '@theme/Tabs';
@@ -26,7 +24,7 @@ curl 'https://api.doordeck.com/device/00000000-0000-0000-0000-000000000000/tile/
   -H "Authorization: Bearer TOKEN"
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the device ID.
 * Replace `00000000-0000-0000-0000-000000000001` with the tile ID.

@@ -8,8 +8,8 @@ The endpoints links multiple locks to a single tile. The current user must be an
 This endpoint is only available from API version 2 onwards.
 
 The behavior of this endpoint is as follows:
-- given set of devices is not empty, the tile will be associated to these given devices, disassociating from any other devices not in the set
-- given set of devices is empty, the tile will be disassociated from all devices
+- Given set of devices is not empty, the tile will be associated to these given devices, disassociating from any other devices not in the set.
+- Given set of devices is empty, the tile will be disassociated from all devices.
 
 ### HTTP Request
 
@@ -46,7 +46,7 @@ curl 'https://api.doordeck.com/tile/00000000-0000-0000-0000-000000000000' \
   }'
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the tile ID to which you want to associate multiple locks.
 * Replace `SITE_ID` with the site ID to which the tile belongs.

@@ -10,8 +10,6 @@ This endpoint allows the name, favourite flag and colour to be updated for an ex
 
 `PUT https://api.doordeck.com/device/LOCK_ID`
 
-Replace `LOCK_ID` with the appropriate lock ID.
-
 ### Request Parameters
 
 | Parameter | Required | Description                          |
@@ -78,7 +76,7 @@ curl 'https://api.doordeck.com/device/00000000-0000-0000-0000-000000000000' \
   --data-binary '{"name":"Home","favourite":false,"colour":"#ffggaa"}'
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the lock's ID.
 :::

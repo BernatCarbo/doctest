@@ -10,8 +10,6 @@ This endpoint retrieves information about a specific lock, its usage is preferre
 
 `GET https://api.doordeck.com/device/LOCK_ID`
 
-Replace `LOCK_ID` with the appropriate lock ID.
-
 ### Example
 
 import Tabs from '@theme/Tabs';
@@ -26,7 +24,7 @@ curl 'https://api.doordeck.com/device/00000000-0000-0000-0000-000000000000' \
   -H "Authorization: Bearer TOKEN"
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the lock's ID.
 :::

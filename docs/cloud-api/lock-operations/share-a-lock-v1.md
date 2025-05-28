@@ -10,8 +10,6 @@ This endpoint allows operations to be performed on a lock, such as lock, unlock,
 
 `POST https://api.doordeck.com/device/LOCK_ID/execute`
 
-Replace `LOCK_ID` with the appropriate lock ID.
-
 :::tip[Success]
 If a request expires within the next 60 seconds, a 204 is returned upon success, if a request expires in more than 60 seconds, a 202 is returned to indicate the request has been queued for the device.
 :::
@@ -85,7 +83,7 @@ ${Execute}`}
 
 </CodeBlock>
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the lock's ID.
 * Replace `INVITEE_PUBLIC_KEY` with the invitee's public key.

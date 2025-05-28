@@ -15,8 +15,6 @@ If user is not found, one is created for the specified USER_EMAIL.
 
 `POST https://api.doordeck.com/share/invite/USER_EMAIL`
 
-Replace `USER_EMAIL` with the user's email
-
 ### Query Parameters
 
 | Parameter | Required | Description                                                                            |
@@ -38,7 +36,7 @@ curl 'https://api.doordeck.com/share/invite/USER_EMAIL' \
   -H 'content-type: application/json'
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `USER_EMAIL` with the user's email.
 :::

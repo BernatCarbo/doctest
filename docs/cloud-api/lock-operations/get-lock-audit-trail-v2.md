@@ -10,8 +10,6 @@ This endpoint retrieves all log events associated with a particular lock, it inc
 
 `GET https://api.doordeck.com/device/LOCK_ID/log?start=0000&end=0000`
 
-Replace `LOCK_ID` with the appropriate lock ID.
-
 ### Request Headers
 
 | Header | Required | Description                          |
@@ -53,7 +51,7 @@ curl 'https://api.doordeck.com/device/00000000-0000-0000-0000-000000000000/log?s
   -H "Authorization: Bearer TOKEN"
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the lock's ID.
 * Replace `start=0000` & `end=0000` with Epoch date range, e.g. start=1593558000&end=1610495999

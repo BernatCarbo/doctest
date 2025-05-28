@@ -11,8 +11,6 @@ administrator of will return user information.
 
 `GET https://api.doordeck.com/site/SITE_ID/user/`
 
-Replace `SITE_ID` with the appropriate site ID.
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -24,7 +22,7 @@ curl 'https://api.doordeck.com/site/00000000-0000-0000-0000-000000000000/user/' 
   -H "Authorization: Bearer TOKEN"
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the site's ID.
 :::

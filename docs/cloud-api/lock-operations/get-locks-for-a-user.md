@@ -11,8 +11,6 @@ enrolled on, the list will only show locks where the current user is an administ
 
 `GET https://api.doordeck.com/user/USER_ID/`
 
-Replace `USER_ID` with the appropriate user ID.
-
 ### Example
 
 import Tabs from '@theme/Tabs';
@@ -26,7 +24,7 @@ curl 'https://api.doordeck.com/user/00000000-0000-0000-0000-000000000000' \
   -H "Authorization: Bearer TOKEN"
 ```
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the user's ID.
 :::

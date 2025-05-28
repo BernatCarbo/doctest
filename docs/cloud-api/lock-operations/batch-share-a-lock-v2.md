@@ -14,8 +14,6 @@ Share a single lock with up to 25 users in a single request.
 
 `POST https://api.doordeck.com/device/LOCK_ID/execute`
 
-Replace `LOCK_ID` with the appropriate lock ID.
-
 :::tip[Success]
 If a request expires within the next 60 seconds, a 204 is returned upon success, if a request expires in more than 60 seconds, a 202 is returned to indicate the request has been queued for the device.
 :::
@@ -99,7 +97,7 @@ ${Execute}`}
 
 </CodeBlock>
 
-:::note[Remember]
+:::info[Remember]
 * Replace `TOKEN` with your access token.
 * Replace `00000000-0000-0000-0000-000000000000` with the lock's ID.
 * Replace `11111111-1111-1111-1111-111111111111` with the invitee's user ID.
