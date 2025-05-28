@@ -89,16 +89,18 @@ const sidebars: SidebarsConfig = {
         'cloud-api/errors'
       ]
     },
-    /*
+
     {
       type: 'category',
       label: 'Kotlin Multiplatform SDK',
       items: [
         'kotlin-multiplatform-sdk/build',
-        'kotlin-multiplatform-sdk/install'
+        'kotlin-multiplatform-sdk/install',
+        'kotlin-multiplatform-sdk/initialize',
+        'kotlin-multiplatform-sdk/crypto',
+        'kotlin-multiplatform-sdk/context-manager'
       ]
     }
-     */
   ],
 };
 
