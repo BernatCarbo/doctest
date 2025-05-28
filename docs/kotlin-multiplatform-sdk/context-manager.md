@@ -3,7 +3,7 @@
 The **Context Manager** simplifies the usage of complex SDK functions by reducing the number of parameters required when setting the operation context, authentication tokens, and other session data.
 
 :::info 
-All the values that are provided to the context manager are automatically stored in [secure storage](04_INITIALIZE.md#secure-storage).
+All the values that are provided to the context manager are automatically stored in [secure storage](initialize.md/#secure-storage).
 :::
 
 ### Set operation context

@@ -15,7 +15,7 @@ The minimum viable `SdkConfig` is `SdkConfig.Builder().build()`, although the fo
 | [Secure storage](#secure-storage) | `setSecureStorageOverride` |           -            |
 
 :::info
-If you initialize the SDK without a cloud auth token, you will need to either provide one manually through the [context manager](06_CONTEXT-MANAGER.md#set-cloud-auth-token) or call the [login](07_API-ACCOUNTLESS.md#login) function to access most SDK functionalities.
+If you initialize the SDK without a cloud auth token, you will need to either provide one manually through the [context manager](context-manager.md#set-cloud-auth-token) or call the login function to access most SDK functionalities.
 :::
 
 ### Secure storage
