@@ -8,7 +8,7 @@ sidebar_position: 5
 This endpoint is only available to users with Doordeck issued auth tokens.
 :::
 
-Delete's the application.
+Deletes the application.
 
 :::danger
 This operation is irreversible!
@@ -40,7 +40,7 @@ curl 'https://api.doordeck.com/platform/application/APPLICATION_ID' \
 </TabItem>
 <TabItem value="response" label="Response">
 
-```json showLineNumbers title="HTTP CODE"
+```markdown showLineNumbers title="HTTP CODE"
 204
 ```
 
