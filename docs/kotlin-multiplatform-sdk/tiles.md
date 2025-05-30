@@ -1,6 +1,6 @@
 # Tiles resource
 
-### Get Locks Belonging to a Tile
+## Get Locks Belonging to a Tile
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -12,8 +12,8 @@ import TabItem from '@theme/TabItem';
 val response = sdk.tiles().getLocksBelongingToTile("TILE_ID")
 ```
 
-:::tip
-In Java, use the `getLocksBelongingToTileAsync` function, which returns a `CompletableFuture<TileLocksResponse>` instead.
+:::tip[In Java...]
+Use the `getLocksBelongingToTileAsync` function, which returns a `CompletableFuture<TileLocksResponse>` instead.
 :::
 
 </TabItem>
@@ -47,7 +47,7 @@ response = await sdk.tiles.get_locks_belonging_to_tile("TILE_ID")
 </TabItem>
 </Tabs>
 
-### Associate Multiple Locks
+## Associate Multiple Locks
 
 <Tabs>
 <TabItem value="jvm" label="JVM & Android">
@@ -56,8 +56,8 @@ response = await sdk.tiles.get_locks_belonging_to_tile("TILE_ID")
 sdk.tiles().associateMultipleLocks("TILE_ID", "SITE_ID", listOf("LOCK_ID"))
 ```
 
-:::tip
-In Java, use the `associateMultipleLocksAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `associateMultipleLocksAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
