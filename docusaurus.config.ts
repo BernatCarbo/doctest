@@ -56,8 +56,8 @@ const config: Config = {
         hashed: true,
         docsRouteBasePath: '/',
         indexBlog: false,
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
+
+        explicitSearchResultPath: false,
         // For Docs using Chinese, it is recomended to set:
         // language: ["en", "zh"],
 
