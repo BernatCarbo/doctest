@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 val response = sdk.accountless().login("EMAIL", "PASSWORD")
 ```
 
-:::note
+:::tip
 In Java, use the `loginAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
@@ -66,7 +66,7 @@ When used successfully, the cloud auth token and cloud refresh token from the re
 val response = sdk.accountless().registration("EMAIL", "PASSWORD", "DISPLAY_NAME", false, PUBLIC_KEY)
 ```
 
-:::info
+:::tip
 In Java, use the `registrationAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
@@ -110,7 +110,7 @@ response = await sdk.accountless.registration("EMAIL", "PASSWORD", "DISPLAY_NAME
 sdk.accountless().verifyEmail("CODE")
 ```
 
-:::info
+:::tip
 In Java, use the `verifyEmailAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -154,7 +154,7 @@ await sdk.accountless.verify_email("CODE")
 sdk.accountless().passwordReset("EMAIL")
 ```
 
-:::info
+:::tip
 In Java, use the `passwordResetAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -198,7 +198,7 @@ await sdk.accountless.password_reset("EMAIL")
 sdk.accountless().passwordResetVerify("USERID", "TOKEN", "EMAIL")
 ```
 
-:::info
+:::tip
 In Java, use the `passwordResetVerify` function, which returns a `CompletableFuture<Void>` instead.
 :::
 

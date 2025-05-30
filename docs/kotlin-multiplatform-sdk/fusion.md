@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 val response = sdk.fusion().login("EMAIL", "PASSWORD")
 ```
 
-:::info
+:::tip
 In Java, use the `fusionAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -60,7 +60,7 @@ response = await sdk.fusion.login("EMAIL", "PASSWORD")
 val response = sdk.fusion().getIntegrationType()
 ```
 
-:::info
+:::tip
 In Java, use the `getIntegrationTypeAsync` function, which returns a `CompletableFuture<IntegrationTypeResponse>` instead.
 :::
 
@@ -104,7 +104,7 @@ response = await sdk.fusion.get_integration_type()
 val response = sdk.fusion().getIntegrationConfiguration("demo")
 ```
 
-:::info
+:::tip
 In Java, use the `getIntegrationConfigurationAsync` function, which returns a `CompletableFuture<List<IntegrationConfigurationResponse>>` instead.
 :::
 
@@ -149,7 +149,7 @@ val controller = Fusion.DemoController()
 sdk.fusion().enableDoor("NAME", "SITE_ID", controller)
 ```
 
-:::info
+:::tip
 In Java, use the `enableDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -198,7 +198,7 @@ await sdk.fusion.enable_door("NAME", "SITE_ID", controller)
 sdk.fusion().deleteDoor("DEVICE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `deleteDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -242,7 +242,7 @@ await sdk.fusion.delete_door("DEVICE_ID")
 val response = sdk.fusion().getDoorStatus("DEVICE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `getDoorStatusAsync` function, which returns a `CompletableFuture<DoorStateResponse>` instead.
 :::
 
@@ -286,7 +286,7 @@ response = await sdk.fusion.get_door_status("DEVICE_ID")
 sdk.fusion().startDoor("DEVICE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `startDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -330,7 +330,7 @@ await sdk.fusion.start_door("DEVICE_ID")
 sdk.fusion().stopDoor("DEVICE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `stopDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 

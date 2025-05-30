@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 sdk.helper().uploadPlatformLogo("APPLICATION_ID", "CONTENT_TYPE", IMAGE_BYTES)
 ```
 
-:::info
+:::tip
 In Java, use the `uploadPlatformLogoAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 

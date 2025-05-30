@@ -24,7 +24,7 @@ import TabItem from '@theme/TabItem';
 val response = sdk.account().refreshToken("REFRESH_TOKEN")
 ```
 
-:::info
+:::tip
 In Java, use the `refreshTokenAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
@@ -72,7 +72,7 @@ When used, the [context manager](context-manager.md) restarts, and the values fr
 sdk.account().logout()
 ```
 
-:::info
+:::tip
 In Java, use the `logoutAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -120,7 +120,7 @@ When used successfully, the user ID and user certificate chain from the response
 val response = sdk.account().registerEphemeralKey(PUBLIC_KEY)
 ```
 
-:::info
+:::tip
 In Java, use the `registerEphemeralKeyAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
 :::
 
@@ -164,7 +164,7 @@ response = await sdk.account.register_ephemeral_key("BASE64_PUBLIC_KEY")
 val response = sdk.account().registerEphemeralKeyWithSecondaryAuthentication(PUBLIC_KEY)
 ```
 
-:::info
+:::tip
 In Java, use the `registerEphemeralKeyWithSecondaryAuthenticationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyWithSecondaryAuthenticationResponse>` instead.
 :::
 
@@ -213,7 +213,7 @@ When used successfully, the user ID and user certificate chain from the response
 val response = sdk.account().verifyEphemeralKeyRegistration("CODE", PRIVATE_KEY)
 ```
 
-:::info
+:::tip
 In Java, use the `verifyEphemeralKeyRegistrationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
 :::
 
@@ -261,7 +261,7 @@ This function is only available to users with Doordeck issued auth tokens.
 sdk.account().reverifyEmail()
 ```
 
-:::info
+:::tip
 In Java, use the `reverifyEmailAsync` function, which returns a `CompletableFuture<Unit>` instead.
 :::
 
@@ -309,7 +309,7 @@ This function is only available to users with Doordeck issued auth tokens.
 sdk.account().changePassword("OLD_PASSWORD", "NEW_PASSWORD")
 ```
 
-:::info
+:::tip
 In Java, use the `changePasswordAsync` function, which returns a `CompletableFuture<Unit>` instead.
 :::
 
@@ -353,7 +353,7 @@ await sdk.account.change_password("OLD_PASSWORD", "NEW_PASSWORD")
 val response = sdk.account().getUserDetails()
 ```
 
-:::info
+:::tip
 In Java, use the `getUserDetailsAsync` function, which returns a `CompletableFuture<UserDetailsResponse>` instead.
 :::
 
@@ -397,7 +397,7 @@ response = await sdk.account.get_user_details()
 sdk.account().updateUserDetails("DISPLAY_NAME")
 ```
 
-:::info
+:::tip
 In Java, use the `updateUserDetailsAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
@@ -449,7 +449,7 @@ When used, the [context manager](context-manager.md) restarts, and the values fr
 sdk.account().deleteAccount()
 ```
 
-:::info
+:::tip
 In Java, use the `deleteAccountAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 

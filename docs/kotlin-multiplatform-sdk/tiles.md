@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 val response = sdk.tiles().getLocksBelongingToTile("TILE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `getLocksBelongingToTileAsync` function, which returns a `CompletableFuture<TileLocksResponse>` instead.
 :::
 
@@ -56,7 +56,7 @@ response = await sdk.tiles.get_locks_belonging_to_tile("TILE_ID")
 sdk.tiles().associateMultipleLocks("TILE_ID", "SITE_ID", listOf("LOCK_ID"))
 ```
 
-:::info
+:::tip
 In Java, use the `associateMultipleLocksAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 

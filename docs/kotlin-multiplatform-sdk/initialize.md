@@ -69,7 +69,7 @@ const sdk = doordeck.com.doordeck.multiplatform.sdk.KDoordeckFactory.initialize(
 var sdk = new DoordeckSdk(cloudAuthToken: "AUTH_TOKEN");
 ```
 
-:::caution
+:::info[Remember]
 You should also call `sdk.Release();` at the end of your application’s lifecycle to release the SDK resources.
 :::
 

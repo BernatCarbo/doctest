@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 val response = sdk.sites().listSites()
 ```
 
-:::info
+:::tip
 In Java, use the `listSitesAsync` function, which returns a `CompletableFuture<List<SiteResponse>>` instead.
 :::
 
@@ -56,7 +56,7 @@ response = await sdk.sites.list_sites()
 val response = sdk.sites().getLocksForSite("SITE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `getLocksForSiteAsync` function, which returns a `CompletableFuture<List<SiteLocksResponse>>` instead.
 :::
 
@@ -100,7 +100,7 @@ response = await sdk.sites.get_locks_for_site("SITE_ID")
 val response = sdk.sites().getUsersForSite("SITE_ID")
 ```
 
-:::info
+:::tip
 In Java, use the `getUsersForSiteAsync` function, which returns a `CompletableFuture<List<UserForSiteResponse>>` instead.
 :::
 
