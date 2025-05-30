@@ -106,7 +106,8 @@ const sidebars: SidebarsConfig = {
         'kotlin-multiplatform-sdk/lock-operations',
         'kotlin-multiplatform-sdk/platform',
         'kotlin-multiplatform-sdk/sites',
-        'kotlin-multiplatform-sdk/tiles'
+        'kotlin-multiplatform-sdk/tiles',
+        'kotlin-multiplatform-sdk/samples'
       ]
     }
   ],

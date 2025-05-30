@@ -2,20 +2,20 @@
 
 This function facilitates the upload of a logo into your application in a single call. Below are examples for different platforms.
 
-### Upload platform logo
+## Upload platform logo
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.helper().uploadPlatformLogo("APPLICATION_ID", "CONTENT_TYPE", IMAGE_BYTES)
 ```
 
-:::tip
-In Java, use the `uploadPlatformLogoAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `uploadPlatformLogoAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>

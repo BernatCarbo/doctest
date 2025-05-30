@@ -80,7 +80,7 @@ iOS 14 or higher.
 </TabItem>
 <TabItem value="js" label="JavaScript">
 
-The JavaScript artifacts are available on [NPM](https://www.npmjs.com/package/@doordeck/doordeck-headless-sdk)
+The JavaScript artifacts are available on [NPM](https://www.npmjs.com/package/@doordeck/doordeck-headless-sdk).
 
 ```shell title="Shell"
 npm install @doordeck/doordeck-headless-sdk --save

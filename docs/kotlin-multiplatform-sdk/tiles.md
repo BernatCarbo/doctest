@@ -6,7 +6,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.tiles().getLocksBelongingToTile("TILE_ID")
@@ -50,7 +50,7 @@ response = await sdk.tiles.get_locks_belonging_to_tile("TILE_ID")
 ## Associate Multiple Locks
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.tiles().associateMultipleLocks("TILE_ID", "SITE_ID", listOf("LOCK_ID"))

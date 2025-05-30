@@ -1,19 +1,19 @@
 # Sites resource
 
-### List Sites
+## List Sites
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.sites().listSites()
 ```
 
-:::tip
-In Java, use the `listSitesAsync` function, which returns a `CompletableFuture<List<SiteResponse>>` instead.
+:::tip[In Java...]
+Use the `listSitesAsync` function, which returns a `CompletableFuture<List<SiteResponse>>` instead.
 :::
 
 </TabItem>
@@ -47,17 +47,17 @@ response = await sdk.sites.list_sites()
 </TabItem>
 </Tabs>
 
-### Get locks for a site
+## Get locks for a site
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.sites().getLocksForSite("SITE_ID")
 ```
 
-:::tip
-In Java, use the `getLocksForSiteAsync` function, which returns a `CompletableFuture<List<SiteLocksResponse>>` instead.
+:::tip[In Java...]
+Use the `getLocksForSiteAsync` function, which returns a `CompletableFuture<List<SiteLocksResponse>>` instead.
 :::
 
 </TabItem>
@@ -91,17 +91,17 @@ response = await sdk.sites.get_locks_for_site("SITE_ID")
 </TabItem>
 </Tabs>
 
-### Get users for a site
+## Get users for a site
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.sites().getUsersForSite("SITE_ID")
 ```
 
-:::tip
-In Java, use the `getUsersForSiteAsync` function, which returns a `CompletableFuture<List<UserForSiteResponse>>` instead.
+:::tip[In Java...]
+Use the `getUsersForSiteAsync` function, which returns a `CompletableFuture<List<UserForSiteResponse>>` instead.
 :::
 
 </TabItem>

@@ -1,6 +1,6 @@
 # Crypto
 
-### Generate a key pair
+## Generate a key pair
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

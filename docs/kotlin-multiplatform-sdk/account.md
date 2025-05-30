@@ -1,31 +1,28 @@
 # Account resource
 
-### Request a new refresh token
+## Request a new refresh token
 
 :::warning
 This function is only available to users with Doordeck issued auth tokens.
 :::
 
-:::note 
-When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
-:::
-
-:::note
-This function can be used with the [refresh token](context-manager.md#set-cloud-refresh-token) value from the context. To use the value from the context, you should pass null as the function parameter
+:::info 
+* When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
+* This function can be used with the [refresh token](context-manager.md#set-cloud-refresh-token) value from the context. To use the value from the context, you should pass null as the function parameter.
 :::
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.account().refreshToken("REFRESH_TOKEN")
 ```
 
-:::tip
-In Java, use the `refreshTokenAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
+:::tip[In Java...]
+Use the `refreshTokenAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
 </TabItem>
@@ -59,21 +56,21 @@ response = await sdk.account.refresh_token("REFRESH_TOKEN")
 </TabItem>
 </Tabs>
 
-### Logout
+## Logout
 
-:::note
+:::warning
 When used, the [context manager](context-manager.md) restarts, and the values from the [secure storage](initialize.md#secure-storage) are automatically deleted.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.account().logout()
 ```
 
-:::tip
-In Java, use the `logoutAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `logoutAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -107,21 +104,23 @@ await sdk.account.logout()
 </TabItem>
 </Tabs>
 
-### Register ephemeral key
+## Register ephemeral key
 
-:::note
+To register a new ephemeral key, you will need to [generate a new key pair](crypto.md#generate-a-key-pair).
+
+:::info
 When used successfully, the user ID and user certificate chain from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.account().registerEphemeralKey(PUBLIC_KEY)
 ```
 
-:::tip
-In Java, use the `registerEphemeralKeyAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
+:::tip[In Java...]
+Use the `registerEphemeralKeyAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -155,17 +154,19 @@ response = await sdk.account.register_ephemeral_key("BASE64_PUBLIC_KEY")
 </TabItem>
 </Tabs>
 
-### Register ephemeral key with secondary authentication
+## Register ephemeral key with secondary authentication
+
+To register a new ephemeral key with secondary authentication, you will need to [generate a new key pair](crypto.md#generate-a-key-pair). After the registration, you will need to [verify the ephemeral key registration](#verify-ephemeral-key-registration).
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.account().registerEphemeralKeyWithSecondaryAuthentication(PUBLIC_KEY)
 ```
 
-:::tip
-In Java, use the `registerEphemeralKeyWithSecondaryAuthenticationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyWithSecondaryAuthenticationResponse>` instead.
+:::tip[In Java...]
+Use the `registerEphemeralKeyWithSecondaryAuthenticationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyWithSecondaryAuthenticationResponse>` instead.
 :::
 
 </TabItem>
@@ -200,21 +201,21 @@ response = await sdk.account.register_ephemeral_key_with_secondary_authenticatio
 </TabItem>
 </Tabs>
 
-### Verify ephemeral key registration
+## Verify ephemeral key registration
 
-:::note  
+:::info  
 When used successfully, the user ID and user certificate chain from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.account().verifyEphemeralKeyRegistration("CODE", PRIVATE_KEY)
 ```
 
-:::tip
-In Java, use the `verifyEphemeralKeyRegistrationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
+:::tip[In Java...]
+Use the `verifyEphemeralKeyRegistrationAsync` function, which returns a `CompletableFuture<RegisterEphemeralKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -248,21 +249,21 @@ response = await sdk.account.verify_ephemeral_key_registration("CODE", "BASE64_P
 </TabItem>
 </Tabs>
 
-### Re-verify email
+## Re-verify email
 
 :::warning
 This function is only available to users with Doordeck issued auth tokens.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.account().reverifyEmail()
 ```
 
-:::tip
-In Java, use the `reverifyEmailAsync` function, which returns a `CompletableFuture<Unit>` instead.
+:::tip[In Java...]
+Use the `reverifyEmailAsync` function, which returns a `CompletableFuture<Unit>` instead.
 :::
 
 </TabItem>
@@ -296,21 +297,21 @@ await sdk.account.reverify_email()
 </TabItem>
 </Tabs>
 
-### Change password
+## Change password
 
 :::warning
 This function is only available to users with Doordeck issued auth tokens.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.account().changePassword("OLD_PASSWORD", "NEW_PASSWORD")
 ```
 
-:::tip
-In Java, use the `changePasswordAsync` function, which returns a `CompletableFuture<Unit>` instead.
+:::tip[In Java...]
+Use the `changePasswordAsync` function, which returns a `CompletableFuture<Unit>` instead.
 :::
 
 </TabItem>
@@ -344,17 +345,17 @@ await sdk.account.change_password("OLD_PASSWORD", "NEW_PASSWORD")
 </TabItem>
 </Tabs>
 
-### Get user details
+## Get user details
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.account().getUserDetails()
 ```
 
-:::tip
-In Java, use the `getUserDetailsAsync` function, which returns a `CompletableFuture<UserDetailsResponse>` instead.
+:::tip[In Java...]
+Use the `getUserDetailsAsync` function, which returns a `CompletableFuture<UserDetailsResponse>` instead.
 :::
 
 </TabItem>
@@ -388,17 +389,17 @@ response = await sdk.account.get_user_details()
 </TabItem>
 </Tabs>
 
-### Update user details
+## Update user details
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.account().updateUserDetails("DISPLAY_NAME")
 ```
 
-:::tip
-In Java, use the `updateUserDetailsAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateUserDetailsAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -432,7 +433,7 @@ await sdk.account.update_user_details("DISPLAY_NAME")
 </TabItem>
 </Tabs>
 
-### Delete account
+## Delete account
 
 :::danger
 This operation is executed instantly and is irreversible.
@@ -443,14 +444,14 @@ When used, the [context manager](context-manager.md) restarts, and the values fr
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.account().deleteAccount()
 ```
 
-:::tip
-In Java, use the `deleteAccountAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `deleteAccountAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>

@@ -7,18 +7,18 @@ All of the platform functions are only available to users with Doordeck issued a
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Create application
+## Create application
 
 <Tabs>
-<TabItem value="jvm" label="JVM">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val application = Platform.CreateApplication("APPLICATION_NAME", "COMPANY_NAME", "COMPANY@MAIL.COM")
 sdk.platform().createApplication(application)
 ```
 
-:::info
-In Java, use the `createApplicationAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `createApplicationAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -57,17 +57,17 @@ await sdk.platform.create_application(data)
 </TabItem>
 </Tabs>
 
-### List applications
+## List applications
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.platform().listApplications()
 ```
 
-:::info
-In Java, use the `listApplicationsAsync` function, which returns a `CompletableFuture<List<ApplicationResponse>>` instead.
+:::tip[In Java...]
+Use the `listApplicationsAsync` function, which returns a `CompletableFuture<List<ApplicationResponse>>` instead.
 :::
 
 </TabItem>
@@ -101,17 +101,17 @@ response = await sdk.platform.list_applications()
 </TabItem>
 </Tabs>
 
-### Get application
+## Get application
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.platform().getApplication("APPLICATION_ID")
 ```
 
-:::info
-In Java, use the `getApplicationAsync` function, which returns a `CompletableFuture<ApplicationResponse>` instead.
+:::tip[In Java...]
+Use the `getApplicationAsync` function, which returns a `CompletableFuture<ApplicationResponse>` instead.
 :::
 
 </TabItem>
@@ -145,17 +145,17 @@ response = await sdk.platform.get_application("APPLICATION_ID")
 </TabItem>
 </Tabs>
 
-### Update application name
+## Update application name
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationName("APPLICATION_ID", "APPLICATION_NAME")
 ```
 
-:::info
-In Java, use the `updateApplicationNameAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationNameAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -189,17 +189,17 @@ await sdk.platform.update_application_name("APPLICATION_ID", "APPLICATION_NAME")
 </TabItem>
 </Tabs>
 
-### Update application company name
+## Update application company name
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationCompanyName("APPLICATION_ID", "APPLICATION_COMPANY_NAME")
 ```
 
-:::info
-In Java, use the `updateApplicationCompanyNameAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationCompanyNameAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -233,17 +233,17 @@ await sdk.platform.update_application_company_name("APPLICATION_ID", "APPLICATIO
 </TabItem>
 </Tabs>
 
-### Update application mailing address
+## Update application mailing address
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationMailingAddress("APPLICATION_ID", "COMPANY@MAIL.COM")
 ```
 
-:::info
-In Java, use the `updateApplicationMailingAddressAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationMailingAddressAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -277,17 +277,17 @@ await sdk.platform.update_application_mailing_address("APPLICATION_ID", "COMPANY
 </TabItem>
 </Tabs>
 
-### Update application privacy policy
+## Update application privacy policy
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationPrivacyPolicy("APPLICATION_ID", "PRIVACY_POLICY")
 ```
 
-:::info
-In Java, use the `updateApplicationPrivacyPolicyAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationPrivacyPolicyAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -321,17 +321,17 @@ await sdk.platform.update_application_privacy_policy("APPLICATION_ID", "PRIVACY_
 </TabItem>
 </Tabs>
 
-### Update application support contact
+## Update application support contact
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationSupportContact("APPLICATION_ID", "SUPPORT_CONTACT_URL")
 ```
 
-:::info
-In Java, use the `updateApplicationSupportContactAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationSupportContactAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -365,17 +365,17 @@ await sdk.platform.update_application_support_contact("APPLICATION_ID", "SUPPORT
 </TabItem>
 </Tabs>
 
-### Update application app link
+## Update application app link
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationAppLink("APPLICATION_ID", "APP_LINK")
 ```
 
-:::info
-In Java, use the `updateApplicationAppLinkAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationAppLinkAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -409,18 +409,18 @@ await sdk.platform.update_application_app_link("APPLICATION_ID", "APP_LINK")
 </TabItem>
 </Tabs>
 
-### Update application email preferences
+## Update application email preferences
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val emailPreferences = Platform.EmailPreferences("SENDER_EMAIL", "SENDER_NAME", "PRIMARY_COLOR", "SECONDARY_COLOR", false, null)
 sdk.platform().updateApplicationEmailPreferences("APPLICATION_ID", emailPreferences)
 ```
 
-:::info
-In Java, use the `updateApplicationEmailPreferencesAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationEmailPreferencesAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -459,17 +459,17 @@ await sdk.platform.update_application_email_preferences("APPLICATION_ID", emailP
 </TabItem>
 </Tabs>
 
-### Update application log url
+## Update application log url
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().updateApplicationLogoUrl("APPLICATION_ID", "LOGO_URL")
 ```
 
-:::info
-In Java, use the `updateApplicationLogoUrlAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateApplicationLogoUrlAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -503,21 +503,21 @@ await sdk.platform.update_application_logo_url("APPLICATION_ID", "LOGO_URL")
 </TabItem>
 </Tabs>
 
-### Delete application
+## Delete application
 
 :::danger
 This operation is executed instantly and is irreversible
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().deleteApplication("APPLICATION_ID")
 ```
 
-:::info
-In Java, use the `deleteApplicationAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `deleteApplicationAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -551,17 +551,17 @@ await sdk.platform.delete_application("APPLICATION_ID")
 </TabItem>
 </Tabs>
 
-### Get logo upload url
+## Get logo upload url
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.platform().getLogoUploadUrl("APPLICATION_ID", "CONTENT_TYPE")
 ```
 
-:::info
-In Java, use the `getLogoUploadUrlAsync` function, which returns a `CompletableFuture<GetLogoUploadUrlResponse>` instead.
+:::tip[In Java...]
+Use the `getLogoUploadUrlAsync` function, which returns a `CompletableFuture<GetLogoUploadUrlResponse>` instead.
 :::
 
 </TabItem>
@@ -595,18 +595,18 @@ response = await sdk.platform.get_logo_upload_url("APPLICATION_ID", "CONTENT_TYP
 </TabItem>
 </Tabs>
 
-### Add auth key
+## Add auth key
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val key = Platform.Ed25519Key("OKP", "sig", "90a983fd-9077-41f9-840c-7220581017f5", "EdDSA", "zVfpB5Nfj4SzYayFpTu4Qm1JaUmk6-FBbFUX3k1qqwc", "Ed25519", "0ufELXg9OUjkAZUs5aGdgVbz664erh8t9cTvFBHicrc")
 sdk.platform().addAuthKey("APPLICATION_ID", key)
 ```
 
-:::info
-In Java, use the `addAuthKeyAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `addAuthKeyAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -645,17 +645,17 @@ await sdk.platform.add_auth_key("APPLICATION_ID", key)
 </TabItem>
 </Tabs>
 
-### Add auth issuer
+## Add auth issuer
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().addAuthIssuer("APPLICATION_ID", "URL")
 ```
 
-:::info
-In Java, use the `addAuthIssuerAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `addAuthIssuerAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -689,17 +689,17 @@ await sdk.platform.add_auth_issuer("APPLICATION_ID", "URL")
 </TabItem>
 </Tabs>
 
-### Delete auth issuer
+## Delete auth issuer
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().deleteAuthIssuer("APPLICATION_ID", "URL")
 ```
 
-:::info
-In Java, use the `deleteAuthIssuerAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `deleteAuthIssuerAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -733,17 +733,17 @@ await sdk.platform.delete_auth_issuer("APPLICATION_ID", "URL")
 </TabItem>
 </Tabs>
 
-### Add CORS domain
+## Add CORS domain
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().addCorsDomain("APPLICATION_ID", "URL")
 ```
 
-:::info
-In Java, use the `addCorsDomainAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `addCorsDomainAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -777,17 +777,17 @@ await sdk.platform.add_cors_domain("APPLICATION_ID", "URL")
 </TabItem>
 </Tabs>
 
-### Remove CORS domain
+## Remove CORS domain
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().removeCorsDomain("APPLICATION_ID", "URL")
 ```
 
-:::info
-In Java, use the `removeCorsDomainAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `removeCorsDomainAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -821,17 +821,17 @@ await sdk.platform.remove_cors_domain("APPLICATION_ID", "URL")
 </TabItem>
 </Tabs>
 
-### Add application owner
+## Add application owner
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().addApplicationOwner("APPLICATION_ID", "OWNER_ID")
 ```
 
-:::info
-In Java, use the `addApplicationOwnerAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `addApplicationOwnerAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -865,17 +865,17 @@ await sdk.platform.add_application_owner("APPLICATION_ID", "OWNER_ID")
 </TabItem>
 </Tabs>
 
-### Remove application owner
+## Remove application owner
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.platform().removeApplicationOwner("APPLICATION_ID", "OWNER_ID")
 ```
 
-:::info
-In Java, use the `removeApplicationOwnerAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `removeApplicationOwnerAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -909,17 +909,17 @@ await sdk.platform.remove_application_owner("APPLICATION_ID", "OWNER_ID")
 </TabItem>
 </Tabs>
 
-### Get application owners details
+## Get application owners details
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.platform().getApplicationOwnersDetails("APPLICATION_ID")
 ```
 
-:::info
-In Java, use the `getApplicationOwnersDetailsAsync` function, which returns a `CompletableFuture<List<ApplicationOwnerDetailsResponse>>` instead.
+:::tip[In Java...]
+Use the `getApplicationOwnersDetailsAsync` function, which returns a `CompletableFuture<List<ApplicationOwnerDetailsResponse>>` instead.
 :::
 
 </TabItem>

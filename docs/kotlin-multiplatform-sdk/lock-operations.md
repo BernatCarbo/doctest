@@ -1,19 +1,19 @@
 # Lock operations resource
 
-### Get single lock
+## Get single lock
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getSingleLock("LOCK_ID")
 ```
 
-:::info
-In Java, use the `getSingleLockAsync` function, which returns a `CompletableFuture<LockResponse>` instead.
+:::tip[In Java...]
+Use the `getSingleLockAsync` function, which returns a `CompletableFuture<LockResponse>` instead.
 :::
 
 </TabItem>
@@ -47,17 +47,17 @@ response = await sdk.lockOperations.get_single_lock("LOCK_ID")
 </TabItem>
 </Tabs>
 
-### Get lock audit trail
+## Get lock audit trail
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getLockAuditTrail("LOCK_ID", START_EPOCH, END_EPOCH)
 ```
 
-:::info
-In Java, use the `getLockAuditTrailAsync` function, which returns a `CompletableFuture<List<LockAuditTrailResponse>>` instead.
+:::tip[In Java...]
+Use the `getLockAuditTrailAsync` function, which returns a `CompletableFuture<List<LockAuditTrailResponse>>` instead.
 :::
 
 </TabItem>
@@ -91,17 +91,17 @@ response = await sdk.lockOperations.get_lock_audit_trail("LOCK_ID", START_EPOCH,
 </TabItem>
 </Tabs>
 
-### Get audit for user
+## Get audit for user
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getAuditForUser("USER_ID", START_EPOCH, END_EPOCH)
 ```
 
-:::info
-In Java, use the `getAuditForUserAsync` function, which returns a `CompletableFuture<List<AuditResponse>>` instead.
+:::tip[In Java...]
+Use the `getAuditForUserAsync` function, which returns a `CompletableFuture<List<AuditResponse>>` instead.
 :::
 
 </TabItem>
@@ -135,17 +135,17 @@ response = await sdk.lockOperations.get_audit_for_user("USER_ID", START_EPOCH, E
 </TabItem>
 </Tabs>
 
-### Get users for lock
+## Get users for lock
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUsersForLock("LOCK_ID")
 ```
 
-:::info
-In Java, use the `getUsersForLockAsync` function, which returns a `CompletableFuture<List<UserLockResponse>>` instead.
+:::tip[In Java...]
+Use the `getUsersForLockAsync` function, which returns a `CompletableFuture<List<UserLockResponse>>` instead.
 :::
 
 </TabItem>
@@ -179,17 +179,17 @@ response = await sdk.lockOperations.get_users_for_lock("LOCK_ID")
 </TabItem>
 </Tabs>
 
-### Get locks for user
+## Get locks for user
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getLocksForUser("LOCK_ID")
 ```
 
-:::info
-In Java, use the `getLocksForUserAsync` function, which returns a `CompletableFuture<LockUserResponse>` instead.
+:::tip[In Java...]
+Use the `getLocksForUserAsync` function, which returns a `CompletableFuture<LockUserResponse>` instead.
 :::
 
 </TabItem>
@@ -223,17 +223,17 @@ response = await sdk.lockOperations.get_locks_for_user("LOCK_ID")
 </TabItem>
 </Tabs>
 
-### Update lock name
+## Update lock name
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().updateLockName("LOCK_ID", "LOCK_NAME")
 ```
 
-:::info
-In Java, use the `updateLockNameAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockNameAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -267,17 +267,17 @@ await sdk.lockOperations.update_lock_name("LOCK_ID", "LOCK_NAME")
 </TabItem>
 </Tabs>
 
-### Update lock favourite
+## Update lock favourite
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().updateLockFavourite("LOCK_ID", true)
 ```
 
-:::info
-In Java, use the `updateLockFavouriteAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockFavouriteAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -311,17 +311,17 @@ await sdk.lockOperations.update_lock_favourite("LOCK_ID", True)
 </TabItem>
 </Tabs>
 
-### Update lock color
+## Update lock color
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().updateLockColour("LOCK_ID", "COLOR")
 ```
 
-:::info
-In Java, use the `updateLockColourAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockColourAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -355,17 +355,17 @@ await sdk.lockOperations.update_lock_colour("LOCK_ID", "COLOR")
 </TabItem>
 </Tabs>
 
-### Update lock setting default name
+## Update lock setting default name
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().updateLockSettingDefaultName("LOCK_ID", "LOCK_NAME")
 ```
 
-:::info
-In Java, use the `updateLockSettingDefaultNameAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockSettingDefaultNameAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -399,17 +399,17 @@ await sdk.lockOperations.update_lock_setting_default_name("LOCK_ID", "LOCK_NAME"
 </TabItem>
 </Tabs>
 
-### Set lock setting permitted addresses
+## Set lock setting permitted addresses
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().setLockSettingPermittedAddresses("LOCK_ID", listOf("PERMITTED_ADDRESS"))
 ```
 
-:::info
-In Java, use the `setLockSettingPermittedAddressesAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `setLockSettingPermittedAddressesAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -444,17 +444,17 @@ await sdk.lockOperations.set_lock_setting_permitted_addresses("LOCK_ID", ["PERMI
 </TabItem>
 </Tabs>
 
-### Update lock setting hidden
+## Update lock setting hidden
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.lockOperations().updateLockSettingHidden("LOCK_ID", true)
 ```
 
-:::info
-In Java, use the `updateLockSettingHiddenAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockSettingHiddenAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -488,18 +488,18 @@ await sdk.lockOperations.update_lock_setting_hidden("LOCK_ID", True)
 </TabItem>
 </Tabs>
 
-### Set lock setting time restrictions
+## Set lock setting time restrictions
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val timeRequirements = listOf(LockOperations.TimeRequirement("START_HH_MM", "END_HH_MM", "TIMEZONE", listOf("MONDAY")))
 sdk.lockOperations().setLockSettingTimeRestrictions("LOCK_ID", timeRequirements)
 ```
 
-:::info
-In Java, use the `setLockSettingTimeRestrictionsAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `setLockSettingTimeRestrictionsAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -539,18 +539,18 @@ await sdk.lockOperations.set_lock_setting_time_restrictions("LOCK_ID", timeRequi
 </TabItem>
 </Tabs>
 
-### Update lock setting location restrictions
+## Update lock setting location restrictions
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val locationRequirement = LockOperations.LocationRequirement(LATITUDE, LONGITUDE, true, 100)
 sdk.lockOperations().updateLockSettingLocationRestrictions("LOCK_ID", locationRequirement)
 ```
 
-:::info
-In Java, use the `updateLockSettingLocationRestrictionsAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateLockSettingLocationRestrictionsAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -589,21 +589,21 @@ await sdk.lockOperations.update_lock_setting_location_restrictions("LOCK_ID", lo
 </TabItem>
 </Tabs>
 
-### Get a Doordeck user's public key
+## Get a Doordeck user's public key
 
-:::important
+:::warning
 This function is only available to users with Doordeck issued auth tokens
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKey("USER_EMAIL", false)
 ```
 
-:::info
-In Java, use the `getUserPublicKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -637,17 +637,17 @@ response = await sdk.lockOperations.get_user_public_key("USER_EMAIL", False)
 </TabItem>
 </Tabs>
 
-### Lookup user public key by email
+## Lookup user public key by email
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByEmail("USER_EMAIL")
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByEmailAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByEmailAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -681,17 +681,17 @@ response = await sdk.lockOperations.get_user_public_key_by_email("USER_EMAIL")
 </TabItem>
 </Tabs>
 
-### Lookup user public key by telephone
+## Lookup user public key by telephone
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByTelephone("USER_TELEPHONE")
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByTelephoneAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByTelephoneAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -725,17 +725,17 @@ response = await sdk.lockOperations.get_user_public_key_by_telephone("USER_TELEP
 </TabItem>
 </Tabs>
 
-### Lookup user public key by local key
+## Lookup user public key by local key
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByLocalKey("USER_LOCAL_KEY")
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByLocalKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByLocalKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -769,17 +769,17 @@ response = await sdk.lockOperations.get_user_public_key_by_local_key("USER_LOCAL
 </TabItem>
 </Tabs>
 
-### Lookup user public key by foreign key
+## Lookup user public key by foreign key
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByForeignKey("USER_FOREIGN_KEY")
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByForeignKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByForeignKeyAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -813,17 +813,17 @@ response = await sdk.lockOperations.get_user_public_key_by_foreign_key("USER_FOR
 </TabItem>
 </Tabs>
 
-### Lookup user public key by identity
+## Lookup user public key by identity
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByIdentity("USER_IDENTITY")
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByIdentityAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByIdentityAsync` function, which returns a `CompletableFuture<UserPublicKeyResponse>` instead.
 :::
 
 </TabItem>
@@ -857,17 +857,17 @@ response = await sdk.lockOperations.get_user_public_key_by_identity("USER_IDENTI
 </TabItem>
 </Tabs>
 
-### Batch lookup user public key by email
+## Batch lookup user public key by email
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByEmails(listOf("USER_EMAIL", "USER_EMAIL"))
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByEmailsAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByEmailsAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
 :::
 
 </TabItem>
@@ -902,17 +902,17 @@ response = await sdk.lockOperations.get_user_public_key_by_emails(["USER_EMAIL",
 </TabItem>
 </Tabs>
 
-### Batch lookup user public key by telephone
+## Batch lookup user public key by telephone
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByTelephones(listOf("USER_TELEPHONE", "USER_TELEPHONE"))
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByTelephonesAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByTelephonesAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
 :::
 
 </TabItem>
@@ -947,17 +947,17 @@ response = await sdk.lockOperations.get_user_public_key_by_telephones(["USER_TEL
 </TabItem>
 </Tabs>
 
-### Batch lookup user public key by local key
+## Batch lookup user public key by local key
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByLocalKeys(listOf("USER_LOCAL_KEY"))
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByLocalKeysAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByLocalKeysAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
 :::
 
 </TabItem>
@@ -992,17 +992,17 @@ response = await sdk.lockOperations.get_user_public_key_by_local_keys(["USER_LOC
 </TabItem>
 </Tabs>
 
-### Batch lookup user public key by foreign key
+## Batch lookup user public key by foreign key
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getUserPublicKeyByForeignKeys(listOf("USER_FOREIGN_KEY", "USER_FOREIGN_KEY"))
 ```
 
-:::info
-In Java, use the `getUserPublicKeyByForeignKeysAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
+:::tip[In Java...]
+Use the `getUserPublicKeyByForeignKeysAsync` function, which returns a `CompletableFuture<List<BatchUserPublicKeyResponse>>` instead.
 :::
 
 </TabItem>
@@ -1037,14 +1037,14 @@ response = await sdk.lockOperations.get_user_public_key_by_foreign_keys(["USER_F
 </TabItem>
 </Tabs>
 
-### Unlock
+## Unlock
 
-:::note
+:::info
 This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1052,8 +1052,8 @@ val unlockOperation = LockOperations.UnlockOperation(baseOperation)
 sdk.lockOperations().unlock(unlockOperation)
 ```
 
-:::info
-In Java, use the `unlockAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `unlockAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1096,14 +1096,14 @@ await sdk.lockOperations.unlock(data)
 </TabItem>
 </Tabs>
 
-### Share lock
+## Share lock
 
-:::note
+:::info
 This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1112,8 +1112,8 @@ val shareLockOperation = LockOperations.ShareLockOperation(baseOperation, shareL
 sdk.lockOperations().shareLock(shareLockOperation)
 ```
 
-:::info
-In Java, use the `shareLockAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `shareLockAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1161,18 +1161,15 @@ await sdk.lockOperations.share_lock(data)
 </TabItem>
 </Tabs>
 
-### Batch share lock
+## Batch share lock
 
-:::note
-This functionality requires the device to support the batch sharing feature. The function will retrieve the device's capabilities, store them in a cache, and perform the batch operation if supported. Otherwise, it will default to the standard device sharing process.
-:::
-
-:::note
-This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
+:::info
+* This functionality requires the device to support the batch sharing feature. The function will retrieve the device's capabilities, store them in a cache, and perform the batch operation if supported. Otherwise, it will default to the standard device sharing process.
+* This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1181,8 +1178,8 @@ val shareLockOperation = LockOperations.BatchShareLockOperation(baseOperation, u
 sdk.lockOperations().batchShareLock(shareLockOperation)
 ```
 
-:::info
-In Java, use the `batchShareLockAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `batchShareLockAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1231,14 +1228,14 @@ await sdk.lockOperations.batch_share_lock(data)
 </TabItem>
 </Tabs>
 
-### Revoke access to lock
+## Revoke access to lock
 
-:::note
+:::info
 This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1246,8 +1243,8 @@ val revokeAccessToLockOperation = LockOperations.RevokeAccessToLockOperation(bas
 sdk.lockOperations().revokeAccessToLock(revokeAccessToLockOperation)
 ```
 
-:::info
-In Java, use the `revokeAccessToLockAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `revokeAccessToLockAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1291,14 +1288,14 @@ await sdk.lockOperations.revoke_access_to_lock(data)
 </TabItem>
 </Tabs>
 
-### Update secure setting unlock duration
+## Update secure setting unlock duration
 
-:::note
+:::info
 This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1306,8 +1303,8 @@ val updateSecureSettingUnlockDuration = LockOperations.UpdateSecureSettingUnlock
 sdk.lockOperations().updateSecureSettingUnlockDuration(updateSecureSettingUnlockDuration)
 ```
 
-:::info
-In Java, use the `updateSecureSettingUnlockDurationAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateSecureSettingUnlockDurationAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1350,14 +1347,14 @@ await sdk.lockOperations.update_secure_setting_unlock_duration(data)
 </TabItem>
 </Tabs>
 
-### Update secure setting unlock between
+## Update secure setting unlock between
 
-:::note
+:::info
 This function can be used with the [user ID, certificate chain, and private key](context-manager.md#set-operation-context) values from the context. To use these values from the context, you should set those parameters to null in the ```BaseOperation``` object.
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val baseOperation = LockOperations.BaseOperation("USER_ID", USER_CERTIFICATE_CHAIN_LIST, PRIVATE_KEY, "LOCK_ID")
@@ -1366,8 +1363,8 @@ val updateSecureSettingUnlockBetween = LockOperations.UpdateSecureSettingUnlockB
 sdk.lockOperations().updateSecureSettingUnlockBetween(updateSecureSettingUnlockBetween)
 ```
 
-:::info
-In Java, use the `updateSecureSettingUnlockBetweenAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `updateSecureSettingUnlockBetweenAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -1414,17 +1411,17 @@ await sdk.lockOperations.update_secure_setting_unlock_between(data)
 </TabItem>
 </Tabs>
 
-### Get pinned locks
+## Get pinned locks
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getPinnedLocks()
 ```
 
-:::info
-In Java, use the `getPinnedLocksAsync` function, which returns a `CompletableFuture<List<LockResponse>>` instead.
+:::tip[In Java...]
+Use the `getPinnedLocksAsync` function, which returns a `CompletableFuture<List<LockResponse>>` instead.
 :::
 
 </TabItem>
@@ -1458,17 +1455,17 @@ response = await sdk.lockOperations.get_pinned_locks()
 </TabItem>
 </Tabs>
 
-### Get shareable locks
+## Get shareable locks
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.lockOperations().getShareableLocks()
 ```
 
-:::info
-In Java, use the `getShareableLocksAsync` function, which returns a `CompletableFuture<List<ShareableLockResponse>>` instead.
+:::tip[In Java...]
+Use the `getShareableLocksAsync` function, which returns a `CompletableFuture<List<ShareableLockResponse>>` instead.
 :::
 
 </TabItem>

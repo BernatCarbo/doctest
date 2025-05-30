@@ -1,8 +1,8 @@
 # Fusion resource
 
-### Login
+## Login
 
-:::note  
+:::info  
 When used successfully, the auth token from the response is added to the [context manager](context-manager.md).
 :::
 
@@ -10,14 +10,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.fusion().login("EMAIL", "PASSWORD")
 ```
 
-:::tip
-In Java, use the `fusionAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `fusionAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -51,17 +51,17 @@ response = await sdk.fusion.login("EMAIL", "PASSWORD")
 </TabItem>
 </Tabs>
 
-### Get integration type
+## Get integration type
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.fusion().getIntegrationType()
 ```
 
-:::tip
-In Java, use the `getIntegrationTypeAsync` function, which returns a `CompletableFuture<IntegrationTypeResponse>` instead.
+:::tip[In Java...]
+Use the `getIntegrationTypeAsync` function, which returns a `CompletableFuture<IntegrationTypeResponse>` instead.
 :::
 
 </TabItem>
@@ -95,17 +95,17 @@ response = await sdk.fusion.get_integration_type()
 </TabItem>
 </Tabs>
 
-### Get integration configuration
+## Get integration configuration
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.fusion().getIntegrationConfiguration("demo")
 ```
 
-:::tip
-In Java, use the `getIntegrationConfigurationAsync` function, which returns a `CompletableFuture<List<IntegrationConfigurationResponse>>` instead.
+:::tip[In Java...]
+Use the `getIntegrationConfigurationAsync` function, which returns a `CompletableFuture<List<IntegrationConfigurationResponse>>` instead.
 :::
 
 </TabItem>
@@ -139,18 +139,18 @@ response = await sdk.fusion.get_integration_configuration("demo")
 </TabItem>
 </Tabs>
 
-### Enable door
+## Enable door
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val controller = Fusion.DemoController()
 sdk.fusion().enableDoor("NAME", "SITE_ID", controller)
 ```
 
-:::tip
-In Java, use the `enableDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `enableDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -189,17 +189,17 @@ await sdk.fusion.enable_door("NAME", "SITE_ID", controller)
 </TabItem>
 </Tabs>
 
-### Delete door
+## Delete door
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.fusion().deleteDoor("DEVICE_ID")
 ```
 
-:::tip
-In Java, use the `deleteDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `deleteDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -233,17 +233,17 @@ await sdk.fusion.delete_door("DEVICE_ID")
 </TabItem>
 </Tabs>
 
-### Get door status
+## Get door status
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.fusion().getDoorStatus("DEVICE_ID")
 ```
 
-:::tip
-In Java, use the `getDoorStatusAsync` function, which returns a `CompletableFuture<DoorStateResponse>` instead.
+:::tip[In Java...]
+Use the `getDoorStatusAsync` function, which returns a `CompletableFuture<DoorStateResponse>` instead.
 :::
 
 </TabItem>
@@ -277,17 +277,17 @@ response = await sdk.fusion.get_door_status("DEVICE_ID")
 </TabItem>
 </Tabs>
 
-### Start door
+## Start door
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.fusion().startDoor("DEVICE_ID")
 ```
 
-:::tip
-In Java, use the `startDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `startDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -321,17 +321,17 @@ await sdk.fusion.start_door("DEVICE_ID")
 </TabItem>
 </Tabs>
 
-### Stop door
+## Stop door
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.fusion().stopDoor("DEVICE_ID")
 ```
 
-:::tip
-In Java, use the `stopDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `stopDoorAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>

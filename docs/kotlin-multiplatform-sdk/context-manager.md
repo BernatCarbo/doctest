@@ -6,7 +6,7 @@ The **Context Manager** simplifies the usage of complex SDK functions by reducin
 All the values that are provided to the context manager are automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
-### Set operation context
+## Set operation context
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -49,7 +49,7 @@ sdk.contextManager.set_operation_context("USER_ID", USER_CERTIFICATE_CHAIN_AS_ST
 </TabItem>
 </Tabs>
 
-### Is certificate chain about to expire
+## Is certificate chain about to expire
 
 Checks if the current certificate chain from the context is about to expire within the next 7 days.
 
@@ -91,7 +91,7 @@ result = sdk.contextManager.is_certificate_chain_about_to_expire()
 </TabItem>
 </Tabs>
 
-### Is key pair valid
+## Is key pair valid
 
 Checks if the current key pair from the context is valid.
 
@@ -133,7 +133,7 @@ result = sdk.contextManager.is_key_pair_valid()
 </TabItem>
 </Tabs>
 
-### Set cloud auth token
+## Set cloud auth token
 
 If the SDK was initialized without an authentication token, you can provide or update the token using this function.
 
@@ -175,7 +175,7 @@ sdk.contextManager.set_cloud_auth_token("AUTH_TOKEN")
 </TabItem>
 </Tabs>
 
-### Get cloud auth token
+## Get cloud auth token
 
 <Tabs>
 <TabItem value="kotlin" label="JVM & Android">
@@ -215,7 +215,7 @@ token = sdk.contextManager.get_cloud_auth_token()
 </TabItem>
 </Tabs>
 
-### Is cloud auth token about to expire
+## Is cloud auth token about to expire
 
 Checks if the current cloud auth token from the context is about to expire within the next 24 hours
 
@@ -257,7 +257,7 @@ result = sdk.contextManager.is_cloud_auth_token_about_to_expire()
 </TabItem>
 </Tabs>
 
-### Set cloud refresh token
+## Set cloud refresh token
 
 <Tabs>
 <TabItem value="kotlin" label="JVM & Android">
@@ -297,7 +297,7 @@ sdk.contextManager.set_cloud_refresh_token("REFRESH_TOKEN")
 </TabItem>
 </Tabs>
 
-### Get cloud refresh token
+## Get cloud refresh token
 
 <Tabs>
 <TabItem value="kotlin" label="JVM & Android">
@@ -337,7 +337,7 @@ token = sdk.contextManager.get_cloud_refresh_token()
 </TabItem>
 </Tabs>
 
-### Set fusion auth token
+## Set fusion auth token
 
 <Tabs>
 <TabItem value="kotlin" label="JVM & Android">
@@ -377,7 +377,7 @@ sdk.contextManager.set_fusion_auth_token("FUSION_AUTH_TOKEN")
 </TabItem>
 </Tabs>
 
-### Get fusion auth token
+## Get fusion auth token
 
 <Tabs>
 <TabItem value="kotlin" label="JVM & Android">
@@ -417,7 +417,7 @@ token = sdk.contextManager.get_fusion_auth_token()
 </TabItem>
 </Tabs>
 
-### Clear context
+## Clear context
 
 This function removes all stored context fields from the secure storage.
 

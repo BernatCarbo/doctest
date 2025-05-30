@@ -1,8 +1,8 @@
 # Accountless resource
 
-### Login
+## Login
 
-:::note
+:::info
 When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
@@ -10,14 +10,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.accountless().login("EMAIL", "PASSWORD")
 ```
 
-:::tip
-In Java, use the `loginAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
+:::tip[In Java...]
+Use the `loginAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
 </TabItem>
@@ -51,23 +51,23 @@ response = await sdk.accountless.login("EMAIL", "PASSWORD")
 </TabItem>
 </Tabs>
 
-### Register a new user
+## Register a new user
 
 After registration, you will need to [verify the email](#verify-email)
 
-:::note
+:::info
 When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 val response = sdk.accountless().registration("EMAIL", "PASSWORD", "DISPLAY_NAME", false, PUBLIC_KEY)
 ```
 
-:::tip
-In Java, use the `registrationAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
+:::tip[In Java...]
+Use the `registrationAsync` function, which returns a `CompletableFuture<TokenResponse>` instead.
 :::
 
 </TabItem>
@@ -101,17 +101,17 @@ response = await sdk.accountless.registration("EMAIL", "PASSWORD", "DISPLAY_NAME
 </TabItem>
 </Tabs>
 
-### Verify email
+## Verify email
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.accountless().verifyEmail("CODE")
 ```
 
-:::tip
-In Java, use the `verifyEmailAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `verifyEmailAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -145,17 +145,17 @@ await sdk.accountless.verify_email("CODE")
 </TabItem>
 </Tabs>
 
-### Password reset
+## Password reset
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.accountless().passwordReset("EMAIL")
 ```
 
-:::tip
-In Java, use the `passwordResetAsync` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `passwordResetAsync` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
@@ -189,17 +189,17 @@ await sdk.accountless.password_reset("EMAIL")
 </TabItem>
 </Tabs>
 
-### Password reset verify
+## Password reset verify
 
 <Tabs>
-<TabItem value="jvm" label="JVM & Android">
+<TabItem value="jvm-android" label="JVM & Android">
 
 ```kotlin showLineNumbers
 sdk.accountless().passwordResetVerify("USERID", "TOKEN", "EMAIL")
 ```
 
-:::tip
-In Java, use the `passwordResetVerify` function, which returns a `CompletableFuture<Void>` instead.
+:::tip[In Java...]
+Use the `passwordResetVerify` function, which returns a `CompletableFuture<Void>` instead.
 :::
 
 </TabItem>
