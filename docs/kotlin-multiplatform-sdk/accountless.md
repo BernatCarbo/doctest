@@ -56,7 +56,7 @@ response = await sdk.accountless.login("EMAIL", "PASSWORD")
 After registration, you will need to [verify the email](#verify-email)
 
 :::note
-When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](06_CONTEXT-MANAGER.md) and automatically stored in [secure storage](04_INITIALIZE.md#secure-storage).
+When used successfully, the cloud auth token and cloud refresh token from the response are added to the [context manager](context-manager.md) and automatically stored in [secure storage](initialize.md#secure-storage).
 :::
 
 <Tabs>
