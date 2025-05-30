@@ -8,14 +8,14 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="jvm-android" label="JVM & Android">
 
-```kotlin showLineNumbers
+```kotlin showLineNumbers showLineNumbers
 val keyPair = sdk.crypto().generateKeyPair()
 ```
 
 </TabItem>
 <TabItem value="swift" label="Swift">
 
-```swift showLineNumbers
+```swift showLineNumbers showLineNumbers
 let keyPair = sdk.crypto().generateKeyPair()
 ```
 
@@ -30,14 +30,14 @@ const keyPair = crypto.generateKeyPair();
 </TabItem>
 <TabItem value="csharp" label="C#">
 
-```csharp showLineNumbers
+```csharp showLineNumbers showLineNumbers
 var keyPair = sdk.GetCryptoManager().GenerateEncodedKeyPair();
 ```
 
 </TabItem>
 <TabItem value="python" label="Python">
 
-```python showLineNumbers
+```python showLineNumbers showLineNumbers
 keyPair = sdk.cryptoManager.generate_key_pair()
 ```
 
