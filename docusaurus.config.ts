@@ -55,6 +55,9 @@ const config: Config = {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         docsRouteBasePath: '/',
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
         // For Docs using Chinese, it is recomended to set:
         // language: ["en", "zh"],
 
