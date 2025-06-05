@@ -7,8 +7,8 @@ sidebar_position: 1
 
 Welcome to the Doordeck Developer Hub
 
-Explore comprehensive documentation for our cloud APIs and software development kits (SDKs),
-designed to accelerate your integration with Doordeck's services.
+Explore comprehensive documentation for our cloud APIs and software development kits (SDKs), 
+designed to accelerate your integration with Doordeck's services. 
 
 This central resource provides everything you need to build
 applications using our cloud platform—whether you're using RESTful APIs or language-specific SDKs.
